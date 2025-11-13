@@ -3,7 +3,7 @@ const mysql = require('mysql2/promise');
 const dbConfig = {
   host: 'localhost',
   user: 'root',
-  password: 'MelS2809',
+  password: 'root',
   database: 'ATW3',
   port: 3306,
   charset: 'utf8mb4'
@@ -49,3 +49,4 @@ async function executeQuery(query, params = []) {
 }
 
 module.exports = { connectDB, executeQuery };
+
